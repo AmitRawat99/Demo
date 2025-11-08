@@ -1,0 +1,65 @@
+/* ✅ 1. Nunito Sans from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "PPPangramSansRounded";
+  src: url("/src/assets/fonts/PPPangramSansRounded-Medium.woff2")
+      format("woff2"),
+    url("/src/assets/fonts/PPPangramSansRounded-Medium.woff") format("woff"),
+    url("/src/assets/fonts/PPPangramSansRounded-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PPPangramSansRounded";
+  src: url("/src/assets/fonts/PPPangramSansRounded-Semibold.woff")
+      format("woff"),
+    url("/src/assets/fonts/PPPangramSansRounded-Semibold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  btn-color: #2430a0;
+  --font-primary: "Nunito Sans", sans-serif;
+  --font-secondary: "PPPangramSansRounded", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.teacher-profiles::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -70px; /* adjust as needed */
+  width: 25%;
+  height: 100%;
+  background-color: rgba(226, 220, 220, 0.411);
+  filter: blur(15px);
+}
