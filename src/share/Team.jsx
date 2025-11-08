@@ -7,6 +7,7 @@ import Team2 from "../assets/img/team/team (2).jpg";
 import Team3 from "../assets/img/team/team (3).jpg";
 
 function Team() {
+  
   const TeacherTeam = [
     {
       TeacherProfile: Team1,

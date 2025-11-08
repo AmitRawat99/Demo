@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaHeart } from "react-icons/fa";
 import banner from '../../assets/img/Banner/banner.png'
-import vector from '../../assets/img/Banner/vector.png'
+import vector from '../../assets/img/Banner/Vector.png'
 import { FaArrowRight } from "react-icons/fa6";
 import { Container } from 'react-bootstrap'
 import FlotingButton from '../sections/FlotingButton';
